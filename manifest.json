@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "url-prettify",
+  "version": "1.0",
+  "description": "Remove unnecessary GET parameters from URLs",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "web_accessible_resources": ["worker.js"],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["prettify.js"]
+    }
+  ]
+
+}

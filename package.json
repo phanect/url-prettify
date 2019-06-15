@@ -1,0 +1,16 @@
+{
+  "name": "url-prettify",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "Jumpei Ogawa <phanective@gmail.com>",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "lint": "eslint --ext=.js ."
+  },
+  "devDependencies": {
+    "@phanect/eslint-plugin": "latest",
+    "eslint": "latest"
+  }
+}

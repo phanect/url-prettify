@@ -10,7 +10,6 @@ if (window.Worker) {
     });
 
     worker.onmessage = (e) => {
-      console.log("push")
       history.pushState({}, "", e.data);
     };
   };

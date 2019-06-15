@@ -1,8 +1,10 @@
+/* eslint-env worker */
+
 "use strict";
 
 onmessage = function(evt) {
-  const url = new URL(evt.data.url),
-        params = new URLSearchParams(url.search);
+  const url = new URL(evt.data.url);
+  const params = new URLSearchParams(url.search);
 
   // Google Analytics
   params.delete("utm_source");
@@ -47,4 +49,4 @@ onmessage = function(evt) {
   const queryString = params.toString();
 
   postMessage(url.origin + url.pathname + (queryString.length > 0 ? "?" + queryString : ""));
-}
+};

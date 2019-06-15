@@ -22,5 +22,5 @@ if (window.Worker) {
       once: true,
       passive: true,
     });
-  };
+  }
 }

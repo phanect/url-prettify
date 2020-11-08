@@ -37,5 +37,8 @@ yarn-error.log*
 # yarn is the package manager for this project. Ignore npm's lock file.
 package-lock.json
 
+# web-ext
+web-ext-artifacts/
+
 # Other tools
 .eslintcache
